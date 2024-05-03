@@ -1,0 +1,40 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/css/icrecream.css">
+<title>Ice Cream Order Form</title>
+</head>
+<body>
+<div id="ice-cream-form">
+    <h2>Ice Cream Order Form</h2>
+    <div class="form-group">
+        <label for="scoops">Number of Scoops:</label>
+        <input type="number" id="scoops" name="scoops" min="1" value="1">
+    </div>
+    <div class="form-group">
+<fieldset>
+            <legend>Toppings:</legend>
+            <!-- for a checkbox you need to type "type=checkbox" -->
+            <input type="checkbox" id="sprinkles" name="topping" value="sprinkles"> 
+            <label for="sprinkles">Sprinkles ($0.50)</label><br>
+            <input type="checkbox" id="hot-fudge" name="topping" value="hot-fudge">
+            <label for="hot-fudge">Hot Fudge ($1.25)</label><br>
+            <input type="checkbox" id="whipped-cream" name="topping" value="whipped-cream">
+            <label for="whipped-cream">Whipped Cream ($0.25)</label><br>
+            <input type="checkbox" id="cherry" name="topping" value="cherry">
+            <label for="cherry">Cherry ($0.25)</label><br>
+            <input type="checkbox" id="nuts" name="topping" value="nuts">
+            <label for="nuts">nuts ($0.25)</label>
+        </fieldset>
+    </div>
+    <button onclick="calculateCost()">Submit Order</button>
+    <div id="order-summary"></div>
+    
+</div>
+<script src="/scripts/icecream.js"></script>
+</body>
+
+</html>
